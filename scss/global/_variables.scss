@@ -263,7 +263,7 @@ $sizes: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
+$body-bg:                   $dark;
 $main-bg:                   $gray-200 !default;
 $body-color:                $gray-900 !default;
 
@@ -418,7 +418,7 @@ $mark-bg:                     #fcf8e3 !default;
 $hr-margin-y:                 $spacer !default;
 
 // Header
-$header-background: $primary !default;
+$header-background: transparent;
 $header-colour: $white !default;
 $header-top-border-colour: lighten($secondary, 10%) !default;
 $header-bottom-border-colour: $secondary !default;

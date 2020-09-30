@@ -4,17 +4,20 @@
 <% require javascript("i-lateral/silverstripe-gallery: client/dist/javascript/gallery.min.js") %>
 
 <% include Banner %>
+<div class="container">
+    <div class="row">
+        <% if $ShowSideBar && $Menu(2).exists %>
+            <% include SideBar %>
+        <% end_if %>
 
-<% if $ShowSideBar && $Menu(2).exists %>
-    <% include SideBar %>
-<% end_if %>
+        <div class="content-container col-sm">
+            <article class="gallery-page">
+                <div class="content">$Content</div>
+                $Gallery
+            </article>
 
-<div class="content-container col-sm">
-    <article class="gallery-page">
-        <div class="content">$Content</div>
-        $Gallery
-    </article>
-
-    $Form
-    $PageComments
+            $Form
+            $PageComments
+        </div>
+    </div>
 </div>

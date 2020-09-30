@@ -25,6 +25,7 @@
     },
     "require": {
         "composer/installers": "*",
-        "silverstripe/framework": ">=4.0"
+        "silverstripe/framework": ">=4.0",
+        "i-lateral/silverstripe-deferedimages-theme": "^1.0"
     }
 }

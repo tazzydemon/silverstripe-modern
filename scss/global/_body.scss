@@ -8,14 +8,19 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
-    &:not(.no-pad-top) .container {
-        padding-top: $grid-gutter-width/2;
-    }
-    .container {
-        padding-bottom: $grid-gutter-width/2;
-    }
     .banner-image {
         margin-bottom: $grid-gutter-width;
+        img {
+            opacity: 0.5;
+        }
+    }
+    &> .container {
+        &:first-child {
+            @extend .pt-5;
+        }
+        &:last-child {
+            @extend .pb-2;
+        }        
     }
     .secondary {
         .nav-pills {

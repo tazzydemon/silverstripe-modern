@@ -1,14 +1,17 @@
 <% include Banner %>
+<div class="container">
+	<div class="row">
+		<div class="blog-entry content-container col-sm">
+			<article>
+				<div class="content">$Content</div>
 
-<div class="blog-entry content-container col-sm">
-	<article>
-		<div class="content">$Content</div>
+				<% include SilverStripe\\Blog\\EntryMeta %>
+			</article>
 
-		<% include SilverStripe\\Blog\\EntryMeta %>
-	</article>
+			$Form
+			$CommentsForm
+		</div>
 
-	$Form
-	$CommentsForm
+		<% include SilverStripe\\Blog\\BlogSideBar %>
+	</div>
 </div>
-
-<% include SilverStripe\\Blog\\BlogSideBar %>
