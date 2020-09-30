@@ -15,7 +15,7 @@
         }
     ],
     "extra": {
-        "installer-name": "bootstrap",
+        "installer-name": "modern",
         "expose": [
             "css",
             "javascript",
