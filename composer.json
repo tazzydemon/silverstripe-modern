@@ -1,6 +1,6 @@
 {
-    "name": "ilateral/silverstripe-bootstrap-4",
-    "description": "A simple SilverStripe theme built on bootstrap 4",
+    "name": "ilateral/silverstripe-modern",
+    "description": "A modern, slightly fancy SilverStripe theme built on bootstrap 4",
     "type": "silverstripe-theme",
     "keywords": [
         "silverstripe",
