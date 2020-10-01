@@ -14,6 +14,10 @@
             opacity: 0.5;
         }
     }
+    .banner-spacer {
+        @extend .bg-dark;
+        padding-bottom: 40%;
+    }
     &> .container {
         &:first-child {
             @extend .pt-5;

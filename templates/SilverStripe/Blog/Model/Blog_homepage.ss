@@ -1,4 +1,4 @@
-<h2 class="h1 text-light text-center">$MenuTitle</h2>
+<h2 class="text-center">$MenuTitle</h2>
 <% if $BlogPosts.Exists %>
     <% loop $BlogPosts.Limit(3) %>
         <div class="container-fluid">

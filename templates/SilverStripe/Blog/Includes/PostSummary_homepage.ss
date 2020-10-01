@@ -1,6 +1,6 @@
-<div class="post-summary $EvenOdd brand-section-$Modulus(3) waypoint-element animate-out">
+<div class="post-summary card mb-4 $EvenOdd brand-section-$Modulus(3) waypoint-element animate-out">
 	<div class="row align-items-stretch">
-		<div class="col-md-6 chevron-holder px-0 order-1<% if $Even %> order-md-3<% end_if %>">
+		<div class="col-md-6 chevron-holder order-1<% if $Even %> order-md-3<% end_if %>">
 			<p class="post-image mb-0">
 				<a href="$Link" title="<%t SilverStripe\\Blog\\Model\\Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>">
 					<% if $FeaturedImage %>
@@ -11,7 +11,7 @@
 				</a>
 			</p>
 		</div>
-		<div class="col-md-6 order-2 d-flex align-items-center">
+		<div class="col-md-6 order-2 d-flex align-items-center card-body">
 			<div class="p-5<% if $Odd %> text-md-right<% end_if %>">
 				<h2>
 					<a href="$Link" title="<%t SilverStripe\\Blog\\Model\\Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>">
