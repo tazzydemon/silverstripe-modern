@@ -55,5 +55,20 @@ nav.secondary {
         left: 50%;
         transform: translate(-50%, -50%);
         transition: opacity 1s;
+        z-index: 999;
+        &.overlay-bottom {
+            top: auto;
+            bottom: 0;
+            transform: translate(-50%,0);
+            .breadcrumb-item {
+                @extend .text-light;
+                a {
+                    @extend .text-light;
+                }
+            }
+        }
     }
+}
+.column-content {
+    columns: 2;
 }

@@ -7,7 +7,7 @@
 
 		<div class="col-sm content-container" role="main">
 			<article>
-				<div class="content">$Content</div>
+				<div class="content<% if not $Menu(2) && not $SideBarView.Widgets %> column-content<% end_if %>">$Content</div>
 			</article>
 
 			$Form

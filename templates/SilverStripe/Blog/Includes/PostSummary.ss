@@ -23,10 +23,7 @@
 		<% else %>
 			<p>$Excerpt</p>
 		<% end_if %>
-			<p>
-				<a class="btn btn-primary" href="$Link">
-					<%t SilverStripe\\Blog\\Model\\Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>
-				</a>
-			</p>
+		<% include MoreLink %>
+
 	</div>
 </div>

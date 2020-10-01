@@ -17,11 +17,8 @@
 
             <p>$Content.FirstParagraph</p>
             
-            <p>
-                <a class="btn btn-primary" href="{$Link}"> 
-                    <%t ChildHubPage.More "More" %>
-                </a>
-            </p>
+            <% include MoreLink %>
+
         </div>
     </div>
 </div>

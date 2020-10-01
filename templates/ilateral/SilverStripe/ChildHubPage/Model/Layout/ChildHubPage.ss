@@ -1,9 +1,9 @@
 <% include Banner %>
 <div class="container">
     <div class="row">
-        <div class="content-container col-sm<% if $ShowSideBar && $Menu(2) %> unit size3of4 lastUnit<% end_if %>">
+        <div class="content-container col-sm">
             <article>
-                <div class="content">$Content</div>
+                <div class="content<% if not $ShowSideBar %> column-content<% end_if %>">$Content</div>
             </article>
             
             <% if $PaginatedChildren.exists %>
