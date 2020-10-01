@@ -1,10 +1,4 @@
-<% if $MapEmbed %>
-    <div class="map-row bg-dark">
-        <div class="mb-4 embed-responsive embed-responsive-map">
-            $MapEmbed
-        </div>
-    </div>
-<% else_if $FeaturedImage %>
+<% if $FeaturedImage %>
     <p class="banner-image mb-4 bg-dark">
         $FeaturedImage.FullwidthBanner
     </p>

@@ -1,4 +1,4 @@
-<header<% if $FeaturedImage || $MapEmbed %> class="sticky-top position-absolute"<% end_if %> role="banner">
+<header<% if $FeaturedImage %> class="sticky-top position-absolute"<% end_if %> role="banner">
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-7 col-sm-6 col-md-4 col-lg-auto">
