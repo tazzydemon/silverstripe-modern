@@ -1,10 +1,6 @@
 <% include Banner %>
 <div class="container">
 	<div class="row">
-		<% if $Menu(2) || $SideBarView.Widgets %>
-			<% include SideBar %>
-		<% end_if %>
-
 		<div class="col-sm content-container" role="main">
 			<article>
 				<div class="content">$Content</div>
@@ -13,5 +9,8 @@
 			$Form
 			$PageComments
 		</div>
+		<% if $Menu(2) || $SideBarView.Widgets %>
+			<% include SideBar %>
+		<% end_if %>
 	</div>
 </div>

@@ -3,10 +3,6 @@
 <% include Banner %>
 <div class="container">
 	<div class="row">
-		<% if $ShowSideBar && $Menu(2).exists %>
-			<% include SideBar %>
-		<% end_if %>
-
 		<div class="content-container col-sm">
 			<article class="gallery-hub">
 				<div class="content">$Content</div>
@@ -15,17 +11,17 @@
 					<div class="gallery-thumbnails">
 						<div class="row line">
 							<% loop $PaginatedGalleries %>
-								<div class="unit size1of4 col-lg-2 col-md-3 col-6 <% if $MultipleOf(4) %>lastUnit<% end_if %>">
-									<figure>
-										<a href="{$Link}" title="{$Title}">
+								<div class="unit size1of4 col-lg-3 col-md-4 col-6 px-0">
+								<figure class="bg-dark<% if $Top.ShowImageTitles %> overlay-holder overlay-hover<% end_if %>">
+										<a class="text-light" href="{$Link}" title="{$Title}">
 											<img
-												class="gallery-thumbnail img-fluid img-responsive w-100"
+												class="gallery-thumbnail img-fluid img-responsive w-100 p-0 overlay-bg"
 												data-src="{$GalleryThumbnail.Link}"
 												src="{$GalleryThumbnail.MicroImage.Link}"
 												alt="{$GalleryThumbnail.Title}"
 											/>
 											<% if $Top.ShowImageTitles %>
-												<figcaption>$Title</figcaption>
+												<figcaption class="overlay">$Title</figcaption>
 											<% end_if %>
 										</a>
 									</figure>
@@ -40,5 +36,8 @@
 				<% end_if %>
 			</article>
 		</div>
+		<% if $ShowSideBar && $Menu(2).exists %>
+			<% include SideBar %>
+		<% end_if %>
 	</div>
 </div>

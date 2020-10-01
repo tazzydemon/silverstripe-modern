@@ -1,18 +1,18 @@
 <% if $Images %>
-    <div class="gallery-thumbnails">
+    <div class="gallery-thumbnails mb-4">
         <div class="row line">
             <% loop $Images %>
                 <% with $GalleryThumbnail %>
-                    <div class="col-lg-2 col-md-3 col-6 unit size1of5 <% if $MultipleOf(5) %>lastUnit<% end_if %>">
-                        <figure data-url="{$Up.GalleryImage.Link}">
+                    <div class="col-lg-3 col-md-4 col-6 unit px-0">
+                        <figure class="mb-0 bg-dark<% if $Top.ShowImageTitles %> overlay-holder overlay-hover<% end_if %>" data-url="{$Up.GalleryImage.Link}">
                             <img
-                                class="gallery-thumbnail img-fluid w-100 img-responsive"
+                                class="gallery-thumbnail img-fluid w-100 img-responsive p-0 overlay-bg"
                                 data-src="{$Link}"
                                 src="{$MicroImage.Link}"
                                 alt="{$Title}"
                             />
                             <% if $Top.ShowImageTitles %>
-                                <figcaption>$Title</figcaption>
+                                <figcaption class="overlay text-light">$Title</figcaption>
                             <% end_if %>
                         </figure>
                     </div>

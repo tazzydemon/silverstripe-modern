@@ -6,10 +6,6 @@
 <% include Banner %>
 <div class="container">
     <div class="row">
-        <% if $ShowSideBar && $Menu(2).exists %>
-            <% include SideBar %>
-        <% end_if %>
-
         <div class="content-container col-sm">
             <article class="gallery-page">
                 <div class="content">$Content</div>
@@ -19,5 +15,8 @@
             $Form
             $PageComments
         </div>
+        <% if $ShowSideBar && $Menu(2).exists %>
+            <% include SideBar %>
+        <% end_if %>
     </div>
 </div>

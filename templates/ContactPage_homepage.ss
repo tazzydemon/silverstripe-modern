@@ -28,7 +28,7 @@
         </div>
         <div class="col-sm" role="main">
             <% if $MapEmbed %>
-                <div class="embed-responsive embed-responsive-map">
+                <div class="embed-responsive embed-responsive-4by3">
                     $MapEmbed.RAW
                 </div>
             <% else_if $FeaturedImage %>
