@@ -19,6 +19,16 @@ Install via composer:
 This theme uses the `ilateral\silverstripe-deferedimages` module as well as `heyday/silverstripe-responsive-images` module
 quite extensivley. In order to work correctly you will need to add some extra configuration to your project (covered below).
 
+## Supported Page Types
+
+By default, this theme provides templates to support the following Page Types:
+
+1. Page
+2. Blog & Blog Post (official blog module)
+3. Child Hub Page (`i-lateral/silverstripe-child-hub-page`)
+4. Userforms
+5. Gallery Hub/Page (`i-lateral/silverstripe-gallery`)
+
 ## Setup
 
 This theme makes some assumptions about your project setup:
@@ -71,4 +81,5 @@ Heyday\ResponsiveImages\ResponsiveImageExtension:
       default_arguments: [540, 540] # xs
 ```
 
-*NOTE:* These are defaults, you can amend these sizes to suit your project needs
+*NOTE:* These are defaults, you can amend these sizes to suit your project needs. Also, an example
+of this config is provided with this module

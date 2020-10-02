@@ -7,13 +7,13 @@ Heyday\ResponsiveImages\ResponsiveImageExtension:
   sets:
     FullwidthBanner:
       arguments:
-        '(min-width: 1200px) and (min-device-pixel-ratio: 2.0)': [3840, 1500] # xl
-        '(min-width: 1200px)': [1920, 750]
-        '(min-width: 992px) and (min-device-pixel-ratio: 2.0)': [2400, 1200] # lg
-        '(min-width: 992px)': [1200, 600]
+        '(min-width: 1200px) and (min-device-pixel-ratio: 2.0)': [3840, 1200] # xl
+        '(min-width: 1200px)': [1920, 600]
+        '(min-width: 992px) and (min-device-pixel-ratio: 2.0)': [2400, 1100] # lg
+        '(min-width: 992px)': [1200, 550]
         '(min-width: 768px) and (min-device-pixel-ratio: 2.0)': [1948, 1100] # md
-        '(min-width: 768px)': [992, 600]
-      default_arguments: [540, 750] # xs
+        '(min-width: 768px)': [992, 550]
+      default_arguments: [540, 540] # xs
     ContentBanner:
       arguments:
         '(min-width: 1200px) and (min-device-pixel-ratio: 2.0)': [2400, 1200] # xl
@@ -22,15 +22,6 @@ Heyday\ResponsiveImages\ResponsiveImageExtension:
         '(min-width: 992px)': [992, 500]
         '(min-width: 768px) and (min-device-pixel-ratio: 2.0)': [1536, 1000] # md
         '(min-width: 768px)': [768, 500]
-      default_arguments: [540, 540] # xs
-    NarrowBanner:
-      arguments:
-        '(min-width: 1200px) and (min-device-pixel-ratio: 2.0)': [2400, 800] # xl
-        '(min-width: 1200px)': [1200, 400]
-        '(min-width: 992px) and (min-device-pixel-ratio: 2.0)': [1948, 800] # lg
-        '(min-width: 992px)': [992, 400]
-        '(min-width: 768px) and (min-device-pixel-ratio: 2.0)': [1536, 800] # md
-        '(min-width: 768px)': [768, 400]
       default_arguments: [540, 540] # xs
     SixByFour:
       arguments:
@@ -87,22 +78,3 @@ Heyday\ResponsiveImages\ResponsiveImageExtension:
         '(min-width: 768px) and (min-device-pixel-ratio: 2.0)': [1440, 1440] # md
         '(min-width: 768px)': [720, 720]
       default_arguments: [540, 540] # xs
-    PadSquare:
-      method: Pad
-      arguments:
-        '(min-width: 1200px) and (min-device-pixel-ratio: 2.0)': [2280, 2280, FFFFFF, 100] # xl
-        '(min-width: 1200px)': [1080, 1080, FFFFFF, 100]
-        '(min-width: 992px) and (min-device-pixel-ratio: 2.0)': [1920, 1920, FFFFFF, 100] # lg
-        '(min-width: 992px)': [960, 960, FFFFFF, 100]
-        '(min-width: 768px) and (min-device-pixel-ratio: 2.0)': [1440, 1440, FFFFFF, 100] # md
-        '(min-width: 768px)': [720, 720, FFFFFF, 100]
-      default_arguments: [540, 540, FFFFFF, 100] # xs
-    Tall:
-      arguments:
-        '(min-width: 1200px) and (min-device-pixel-ratio: 2.0)': [1080, 2280] # xl
-        '(min-width: 1200px)': [540, 1080]
-        '(min-width: 992px) and (min-device-pixel-ratio: 2.0)': [960, 1920] # lg
-        '(min-width: 992px)': [480, 960]
-        '(min-width: 768px) and (min-device-pixel-ratio: 2.0)': [720, 1440] # md
-        '(min-width: 768px)': [360, 720]
-      default_arguments: [270, 540] # xs
