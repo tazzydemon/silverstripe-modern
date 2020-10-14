@@ -17,6 +17,9 @@
     .banner-spacer {
         @extend .bg-dark;
         padding-bottom: 40%;
+        @include media-breakpoint-down('sm') {
+            padding-bottom: 60%;
+        }
     }
     &> .container {
         &:first-child {
