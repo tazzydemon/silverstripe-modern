@@ -12,7 +12,7 @@
 			</p>
 		</div>
 		<div class="col-md-6 order-2 d-flex align-items-center card-body">
-			<div class="p-5<% if $Odd %> text-md-right<% end_if %>">
+			<div class="p-5<% if $Even %> text-md-right<% end_if %>">
 				<h2>
 					<a href="$Link" title="<%t SilverStripe\\Blog\\Model\\Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>">
 						<% if $MenuTitle %>$MenuTitle
@@ -24,7 +24,7 @@
 				<% if $Summary %>
 					$Summary
 				<% else %>
-					<p>$Excerpt</p>
+					<p>$Content.FirstParagraph</p>
 				<% end_if %>
 				<% include MoreLink %>
 
