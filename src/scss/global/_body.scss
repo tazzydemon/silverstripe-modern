@@ -2,42 +2,48 @@
     BODY STYLES
 ****************************************/
 .main {
-    background-color: $main-bg;
+  background-color: $main-bg;
 
-    &.full-background {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    .banner-image {
-        margin-bottom: $grid-gutter-width;
+  &.full-background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 
-        img {
-            opacity: 0.5;
-        }
-    }
-    .banner-spacer {
-        @extend .bg-dark;
-        padding-bottom: 40%;
+  .banner-image {
+    margin-bottom: $grid-gutter-width;
 
-        @include media-breakpoint-down('sm') {
-            padding-bottom: 60%;
-        }
+    img {
+      opacity: 0.5;
     }
-    &> .container {
-        &:first-child {
-            @extend .pt-5;
-        }
-        &:last-child {
-            @extend .pb-2;
-        }        
-    }
-    .secondary .nav-pills .nav {
-        padding: $grid-gutter-width/4;
+  }
 
-        .active {
-            background: transparent;
-            color: $sub-nav-active-colour;
-        }
+  .banner-spacer {
+    @extend .bg-dark;
+
+    padding-bottom: 40%;
+
+    @include media-breakpoint-down("sm") {
+      padding-bottom: 60%;
     }
+  }
+
+  & > .container {
+    &:first-child {
+      @extend .pt-5;
+    }
+
+    &:last-child {
+      @extend .pb-2;
+    }
+  }
+
+  .secondary .nav-pills .nav {
+    padding: $grid-gutter-width/4;
+
+    .active {
+      background: transparent;
+      color: $sub-nav-active-colour;
+    }
+  }
 }
