@@ -1,7 +1,7 @@
 {
-  "name": "silverstripe-bootstrap",
+  "name": "silverstripe-modern",
   "version": "1.0.0",
-  "description": "SilverStripe Theme using Bootstrap 4",
+  "description": "Modern style SilverStripe theme built using Bootstrap 4",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
     "babel-cli": "^6.26.0",
