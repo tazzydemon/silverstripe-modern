@@ -3,6 +3,7 @@
 ****************************************/
 .main {
     background-color: $main-bg;
+
     &.full-background {
         background-size: cover;
         background-repeat: no-repeat;
@@ -10,6 +11,7 @@
     }
     .banner-image {
         margin-bottom: $grid-gutter-width;
+
         img {
             opacity: 0.5;
         }
@@ -17,6 +19,7 @@
     .banner-spacer {
         @extend .bg-dark;
         padding-bottom: 40%;
+
         @include media-breakpoint-down('sm') {
             padding-bottom: 60%;
         }
@@ -29,15 +32,12 @@
             @extend .pb-2;
         }        
     }
-    .secondary {
-        .nav-pills {
-            .nav {
-                padding: $grid-gutter-width/4;
-                .active {
-                    background: transparent;
-                    color: $sub-nav-active-colour;
-                }
-            }
+    .secondary .nav-pills .nav {
+        padding: $grid-gutter-width/4;
+
+        .active {
+            background: transparent;
+            color: $sub-nav-active-colour;
         }
     }
 }

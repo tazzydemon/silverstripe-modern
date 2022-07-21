@@ -9,6 +9,7 @@ header {
     padding-bottom: $grid-gutter-width/4;
     color: $header-colour;
     border-top: none;
+
     a {
         color: $header-colour;      
     }
@@ -19,9 +20,11 @@ header {
             z-index: 9;       
         }
     }
+
     .dropdown-menu a {
         position: relative;
         padding-right: 2.5em;
+
         .fa-chevron-right {
             opacity: 0.25;
             right: 1em;
