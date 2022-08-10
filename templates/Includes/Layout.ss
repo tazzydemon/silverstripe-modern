@@ -7,7 +7,7 @@
 
     EG: $Title would be $Me.Title
 --%>
-<div class="container typography">
+<div class="typography">
     <div class="row">
         $Layout
     </div>
