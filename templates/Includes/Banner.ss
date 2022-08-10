@@ -34,16 +34,3 @@
 <% else %>
     <div class="banner-spacer mb-4"></div>
 <% end_if %>
-    <div class="overlay overlay-bottom text-light w-100">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1<% if not $Level(2) %> class="text-center"<% end_if %>>
-                        $Title
-                    </h1>
-                </div>
-                <% include BreadCrumbs %>
-            </div>
-        </div>
-    </div>
-</div>

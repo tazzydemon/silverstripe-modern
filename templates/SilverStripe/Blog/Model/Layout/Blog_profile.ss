@@ -1,4 +1,3 @@
-<% include Banner %>
 <div class="container">
 	<div class="row">
 		<div class="blog-entry content-container col-sm">
@@ -15,9 +14,8 @@
 			$CommentsForm
 
 			<% with $PaginatedList %>
-				<% include SilverStripe\\Blog\\Pagination %>
+				<% include Pagination %>
 			<% end_with %>
-
 		</div>
 
 		<% include SilverStripe\\Blog\\BlogSideBar %>

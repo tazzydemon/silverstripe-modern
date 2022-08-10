@@ -1,4 +1,3 @@
-<% include Banner %>
 <div class="container">
 	<div class="row">
 		<div class="col-sm content-container" role="main">

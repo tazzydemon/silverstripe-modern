@@ -3,7 +3,6 @@
 <% require javascript("i-lateral/silverstripe-gallery: node_modules/tingle.js/dist/tingle.min.js") %>
 <% require javascript("i-lateral/silverstripe-gallery: client/dist/javascript/gallery.min.js") %>
 
-<% include Banner %>
 <div class="container">
     <div class="row">
         <div class="content-container col-sm">

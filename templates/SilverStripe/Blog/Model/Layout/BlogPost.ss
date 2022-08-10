@@ -1,4 +1,3 @@
-<% include Banner %>
 <div class="container">
 	<div class="row">
 		<div class="blog-entry content-container col-sm">

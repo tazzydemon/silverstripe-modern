@@ -1,6 +1,5 @@
 <% require css("i-lateral/silverstripe-gallery: client/dist/css/gallery.min.css") %>
 
-<% include Banner %>
 <div class="container">
 	<div class="row">
 		<div class="content-container col-sm">
