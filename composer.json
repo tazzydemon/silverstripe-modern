@@ -1,6 +1,6 @@
 {
-    "name": "dft/silverstripe-modern",
-    "description": "A modern, slightly fancy SilverStripe theme built on bootstrap 4",
+    "name": "tazzydemon/silverstripe-modern",
+    "description": "A modern, slightly fancy SilverStripe theme built on bootstrap 4. Originally by dft",
     "type": "silverstripe-theme",
     "keywords": [
         "silverstripe",
